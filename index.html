@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Căn giữa tiêu đề */
+        h1 {
+            text-align: center;
+        }
+        /* Căn giữa ảnh */
+        .fanraunhi {
+            text-align: center;
+        }
+        /* Kích thước mặc định của ảnh */
+        .fanraunhi img {
+            width: 350px;
+            height: auto; /* Giữ tỉ lệ ảnh */
+            max-width: 100%; /* Để ảnh không vượt quá kích thước của thẻ chứa */
+        }  
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5em;
+            }
+            .fanraunhi img {
+                width: 100%; 
+            }
+        }  
+        @media (min-width: 601px) {
+            .fanraunhi img {
+                width: 350px; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Fan râu nhí</h1>
+
+    <div class="fanraunhi">
+        <img src="./images/anh1.jpg" alt="raunhi">
+    </div>
+
+</body>
+</html>
